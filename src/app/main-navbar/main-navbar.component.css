@@ -1,0 +1,26 @@
+#banner
+          {
+            background-image: linear-gradient(to right,#585858,#646464);
+            color: #ffff;
+            padding-top: 2%;
+          }
+
+          .promo-title
+          {
+            text-align: left;
+            font-size: 35px;
+            font-weight: 600;
+            margin-top: 40px;
+            color:black;
+          }
+
+          .active-pink{
+              text-align: right;
+          }
+          .loose{
+            margin-left: 25%;
+            bottom: 10%;
+            padding-left: 25%;
+            text-align: right;
+          }
+

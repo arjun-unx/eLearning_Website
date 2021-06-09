@@ -1,0 +1,89 @@
+<nav class="navbar navbar-expand-md navbar-dark bg-dark mt-0 mb-0">
+    <a class="navbar-brand" href="#">Zynd</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="home"  data-toggle="tooltip" data-placement="left" title="Go to Home Page" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li ngbDropdown class="nav-item dropdown">
+          <a ngbDropdownToggle class="nav-link dropdown-toggle" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Catgories</a>
+          <div ngbDropdownMenu class="dropdown-menu" aria-labelledby="dropdown01">
+            <li ngbDropdownItem class="dropdown-item"></li>          
+            <div class="continer ml-sm-4 mr-2">
+            <select>
+                 <option *ngFor="let i of Development">{{i}}</option>
+              </select></div>
+            <a ngbDropdownItem class="dropdown-item" href="#"></a>
+            <div class="continer ml-sm-4">
+              <select>
+                 <option *ngFor="let i of Business">{{i}}</option>
+              </select>
+              </div>
+              <a ngbDropdownItem class="dropdown-item" href="#"></a>
+              <div class="continer ml-sm-4">
+            <select>
+              <option *ngFor="let i of Programming">{{i}}</option>
+           </select></div>
+           <div class="continer mt-2 ml-sm-4">
+            <select>
+              <option *ngFor="let i of Arts">{{i}}</option>
+           </select></div>
+           <div class="continer mt-2 ml-sm-4">
+            <select>
+              <option *ngFor="let i of cs">{{i}}</option>
+           </select></div>
+
+           <div class="continer mt-2 ml-sm-4">
+            <select>
+              <option *ngFor="let i of ds">{{i}}</option>
+           </select></div>
+
+           <div class="continer mt-2 ml-sm-4">
+            <select>
+              <option *ngFor="let i of it">{{i}}</option>
+           </select></div>
+
+           <div class="continer mt-2 ml-sm-4">
+            <select>
+              <option *ngFor="let i of Animal">{{i}}</option>
+           </select></div>
+
+           <div class="continer mt-2 ml-sm-4">
+            <select>
+              <option *ngFor="let i of Algebra">{{i}}</option>
+           </select></div>
+
+            
+            <a ngbDropdownItem class="dropdown-item" href="#"></a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="down"  data-toggle="tooltip" data-placement="top" title="To See Ongoing Courses" href="#">In Progress</a>
+        </li>
+        
+      <!--
+         <li class="nav-item">
+          <a class="nav-link" routerLink="Projects"  data-toggle="tooltip" data-placement="right" title="To view Completed Courses" href="#">Completed</a>
+        </li>
+      --> 
+        <li class="nav-item">
+          <a class="nav-link" routerLink="certificate" href="#">Certifications</a>
+        </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="panel" href="#">Compete</a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link" routerLink="aboutus" href="#">Contact Us</a>
+          </li>
+            
+      </ul>
+  <button type="button" [routerLink]="['login']" class="btn btn-success">Log In</button> &nbsp;&nbsp;&nbsp;
+  <button type="button" [routerLink]="['register']" class="btn btn-info">Sign-In</button>
+</div>
+</nav>
+

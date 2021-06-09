@@ -1,0 +1,20 @@
+#banner
+          {
+            color: black;
+            padding-top: 2%;
+          }
+
+          .promo-title
+          {
+            text-align: left;
+            font-size: 35px;
+            font-weight: 600;
+            margin-top: 40px;
+            color:black;
+          }
+
+          .active-pink{
+              text-align: right;
+          }
+          
+
